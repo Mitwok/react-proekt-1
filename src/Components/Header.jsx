@@ -13,7 +13,9 @@ const Header = () => {
             <a className={styles.navItem} href="#offers">
               oferta
             </a>
-            <a className={styles.navItemDisabled}>kontakt</a>
+            <a className={styles.navItemDisabled} href="#footer">
+              kontakt
+            </a>
           </nav>
         </div>
       </div>

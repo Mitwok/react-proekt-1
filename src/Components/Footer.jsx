@@ -7,7 +7,7 @@ import {
 
 const Footer = (props) => {
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       <div className={styles.footerMargins}>
         <div className={styles.footerContent}>
           <div>
@@ -18,6 +18,7 @@ const Footer = (props) => {
               className={styles.socialLinksItem}
               href="https://instagram.com/"
               target="_blank"
+              rel="noreferrer noopener"
               title="instagram"
             >
               <FontAwesomeIcon icon={faInstagram} color="white" fontSize={45} />
@@ -26,6 +27,7 @@ const Footer = (props) => {
               className={styles.socialLinksItem}
               href="https://www.facebook.com/"
               target="_blank"
+              rel="noreferrer noopener"
               title="facebook"
             >
               <FontAwesomeIcon
