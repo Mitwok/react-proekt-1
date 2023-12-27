@@ -1,0 +1,79 @@
+.offersBackground {
+  background-color: #405d78;
+}
+
+.offersMargin {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.offersContent {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3.19rem;
+}
+
+.offersH1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 3.17rem;
+}
+
+.offers {
+  max-width: 49rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.offerBox {
+  position: relative;
+  width: 12.375rem;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.91rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.142);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.offerBox:hover {
+  transform: scale(1.05);
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.isNew {
+  border-radius: 9999px;
+  position: absolute;
+  top: -0.6875rem;
+  left: -0.6875rem;
+  width: 1.375rem;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  background-color: #e07a64;
+}
+
+@media only screen and (max-width: 450px) {
+  .offerBox {
+    width: 20rem;
+  }
+}

@@ -1,0 +1,58 @@
+.aboutTitle {
+  color: #152d41;
+  font-family: Roboto;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4.88rem;
+}
+
+.aboutMargin {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.aboutContent {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.19rem;
+}
+
+.aboutItemPhoto {
+  border-radius: 9999px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(128, 128, 128, 0.15);
+  margin-right: 2.75rem;
+  width: 12.3125rem;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+}
+
+.aboutItemsUser {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.aboutItemsUser:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 450px) {
+  .aboutItemsUser {
+    flex-direction: column;
+  }
+  .aboutItemsUser:nth-child(2n) {
+    flex-direction: column;
+  }
+  .aboutTitle {
+    text-align: center;
+  }
+  .aboutItemPhoto {
+    margin-right: 0;
+  }
+}
