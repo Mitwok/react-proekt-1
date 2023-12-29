@@ -3,14 +3,12 @@
 }
 
 .headerMargin {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
 
 .headerContent {
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,13 +17,15 @@
 
 .navItem {
   color: #f1f1f1;
-  font-family: Roboto;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
   margin-left: 2.87rem;
+  padding: 0 0.3rem 0.3rem;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.125s;
 }
 
 @media only screen and (max-width: 440px) {
@@ -35,25 +35,23 @@
 }
 
 .navItem:hover {
-  border-bottom: solid 2px #f1f1f1;
-  padding-bottom: 0.3rem;
+  border-bottom: solid 4px #f1f1f1;
 }
 
 .navItemDisabled {
   color: #f1f1f1;
-  font-family: Roboto;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
   margin-left: 2.87rem;
-  pointer-events: none;
+  cursor: not-allowed;
+  padding: 0 0.3rem 0.3rem;
 }
 
 .logo {
   color: #fff;
-  font-family: Roboto;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;

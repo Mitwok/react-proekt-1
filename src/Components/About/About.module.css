@@ -1,6 +1,5 @@
 .aboutTitle {
   color: #152d41;
-  font-family: Roboto;
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
@@ -9,15 +8,16 @@
 }
 
 .aboutMargin {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
+}
+
+.aboutItemName {
+  font-size: 1.125rem;
 }
 
 .aboutContent {
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3.19rem;
+  margin: 0 auto 3.19rem;
 }
 
 .aboutItemPhoto {
@@ -33,6 +33,7 @@
 }
 
 .aboutItemsUser {
+  font-size: 1.125rem;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -40,6 +41,10 @@
 
 .aboutItemsUser:nth-child(2n) {
   flex-direction: row-reverse;
+  text-align: right;
+  .aboutItemPhoto {
+    margin: 0 0 0 2.75rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -48,11 +53,15 @@
   }
   .aboutItemsUser:nth-child(2n) {
     flex-direction: column;
+    text-align: start;
+    .aboutItemPhoto {
+      margin: 0;
+    }
   }
   .aboutTitle {
     text-align: center;
   }
   .aboutItemPhoto {
-    margin-right: 0;
+    margin: 0;
   }
 }

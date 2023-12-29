@@ -3,26 +3,22 @@
 }
 
 .offersMargin {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
 
 .offersContent {
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-top: 3.19rem;
 }
 
 .offersH1 {
   color: #fff;
-  font-family: Roboto;
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 0;
-  margin-bottom: 3.17rem;
+  margin: 0 0 3.17rem 0;
 }
 
 .offers {
@@ -30,8 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .offerBox {
@@ -45,20 +40,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 3.91rem;
-  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.142);
+  margin: 0 0.5rem 3.91rem 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
   text-align: center;
-  font-family: Roboto;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: 0.5s ease-in-out;
 }
 
 .offerBox:hover {
   transform: scale(1.05);
-  transition: ease-in-out;
-  transition-duration: 0.5s;
 }
 
 .isNew {
@@ -72,8 +65,11 @@
   background-color: #e07a64;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
   .offerBox {
-    width: 20rem;
+    width: 80%;
+  }
+  .offerBox:hover {
+    transform: none;
   }
 }
